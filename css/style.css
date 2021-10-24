@@ -1,0 +1,291 @@
+body{
+    background-color: #fafafa;
+}
+img{
+    width: 100%;
+}
+::-webkit-scrollbar {
+    width: 7px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888; 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
+.top{
+    height: 54px;
+    align-items: center;
+    background-color: #ffff;
+    border-bottom: 1px solid rgba(58, 53, 53, 0.384);
+    z-index: 999;
+    width: 100%;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+}
+.navbar input{
+    outline: none;
+    border:2px solid #111;
+}
+.navbar ::placeholder{
+    text-align: center;
+}
+.menu{
+    display: flex;
+    justify-content: space-between;
+}
+.menu .menu_bar{
+    margin-right: 15px;
+}
+.menu .menu_bar a{
+    text-decoration: none;
+    margin-right: 3px;
+    position:relative;
+}
+.menu .menu_bar a .badge{
+    position:absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: crimson;
+    color: #fff;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    font-size:7px;
+    right:0;
+    top:0;
+}
+.menu .profile img{
+    height: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 2px solid #111;
+    object-fit: cover;
+    object-position: center;
+    line-height: 54px;
+    cursor: pointer;
+}
+
+/* Mobile navbar css  */
+
+@media (max-width:768px){
+    .navbar input{
+        display: none;
+    }
+}
+
+.menu .profile{
+    position:relative;
+}
+.menu .profile .drop_box{
+    position:absolute;
+    left:0;
+    top:0;
+    margin-top:75px;
+    opacity: 0;
+    visibility: hidden;
+    margin-left:-150px;
+    width: 200px;
+    background-color: #fff;
+    transition: 0.5s ease-in-out;
+}
+.menu .profile .drop_box li{
+    list-style: none;
+    margin-top:5px;
+    padding:8px 0px;
+}
+.menu .profile .drop_box li a{
+    text-decoration: none;
+    color:#111;
+    font-size: 12px;
+    font-weight: 500;
+    display: block;
+}
+.menu .profile .drop_box li a span{
+    margin-right:10px;
+}
+.profile:hover .drop_box{
+    margin-top:55px;
+    opacity: 1;
+    visibility: visible;
+}
+.profile .drop_box li:hover{
+    background-color: #fafafa;
+}
+
+
+
+/* MAIN DIV CSS START HERE  */
+.main_div{ 
+    margin-top:100px;
+}
+.main_div .card_top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.main_div .card_top img{
+    height: 50px;
+    width: 50px;
+    border: 2px solid #111;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+}
+.main_div .card_top .user_name{
+    margin-left:10px;
+    cursor: pointer;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+.main_div .card_top .setting_btn span{
+    cursor: pointer;
+}
+
+.main_div .card_post{
+    margin-top:20px;
+}
+.main_div .card_post img{
+    height: 450px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.main_div .meta_Box{
+    margin-top:20px;
+    display: flex;
+    justify-content: space-between;
+    padding:0px 15px;
+}
+.main_div .meta_Box a{
+    text-decoration: none;
+    margin-left: 5px;
+}
+.main_div .like_count{
+    margin-top:5px;
+}
+.main_div  .like_count p{
+    font-size: 17px;
+    font-weight: 600;
+    padding-left:15px;
+}
+.main_div .like_count p span{
+    margin-right: 5px;
+}
+.main_div .description_box p{
+    text-transform: capitalize;
+}
+.main_div .post_time p{
+    font-weight: 700;
+}
+.main_div .comment_box{
+    margin-top:10px;
+    display: flex;
+    justify-content: space-between;
+    padding:0px 20px;
+}
+.main_div .comment_box input{
+    width: 350px;
+    border-radius: 27px;
+    outline: none;
+    border:0.75px solid #111;
+    
+}
+.main_div .comment_box .post_btn{
+    cursor: pointer;
+    font-weight: 700;
+}
+.main_div .comment_box .post_btn:hover{
+    color: cadetblue;
+}
+.main_div .comment_box ::placeholder{
+    padding:20px;
+}
+
+@media screen and (max-width:984px) {
+    .main_div .comment_box input{
+        width:100% !important;
+    }
+}
+
+.account_proflie{
+    width: 35%;
+    position: fixed;
+    height: 70vh;
+    padding:0px 10px;
+}
+
+.account_proflie a{
+    text-decoration: none;
+}
+.account_proflie .acount_box{
+    display: flex;
+    justify-content: space-between;
+}
+.account_proflie .img_box{
+    display: flex;
+    justify-content: space-between;
+}
+.account_proflie .img_box img{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    border: 2px solid #111;
+    margin-right: 10px;
+}
+.account_proflie .img_box p{
+    margin-top: -10px;
+    font-size: 12px;
+}
+.account_proflie .suggetion{
+    display: flex;
+    justify-content: space-between;
+}
+.follow_box{
+    height: 260px;
+    overflow-y: scroll;
+}
+.follow_card{
+    display: flex;
+    justify-content: space-between;
+    margin:5px 0px;
+}
+.follow_card img{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    border:2px solid #111;
+    margin-right: 5px;
+}
+.follow_card .user_img{
+    display: flex;
+}
+.follow_card h6{
+    font-size: 14px;
+}
+.follow_card p{
+    font-size:12px;
+    margin-top:-10px;
+}
+.footer_link a{
+    font-size: 14px;
+    margin-right: 10px;
+    color: rgb(36, 35, 35);
+}
+.footer_title{
+    margin-top: 10px;
+    font-size: 15px;
+
+}
